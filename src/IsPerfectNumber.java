@@ -28,7 +28,6 @@ public class IsPerfectNumber {
         }
     }
 
-
     public static void main(String[] args) {
         IsPerfectNumber isPerfectNumber = new IsPerfectNumber();
 
