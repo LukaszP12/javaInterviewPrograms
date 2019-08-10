@@ -1,4 +1,7 @@
 // Print all permutations of a given string. For example, xy would be xy and yx.
+// 1. Take out the first char and keep it constant. And permute rest of the characters.
+// 2. User recursive method call to permute rest of the string except first character.
+// 3. While making recursive call, we accumulate each character being constant along with recursive call response.
 
 import java.util.ArrayList;
 import java.util.List;
