@@ -1,3 +1,5 @@
+package Main;
+
 public class FindMiddleIndex {
 
     public static int findMiddleIndex(int[] numbers) throws Exception {
@@ -25,21 +27,13 @@ public class FindMiddleIndex {
     }
 
     public static void main(String a[]) {
-        int[] numbers = {2,4,4,5,4,1};
+        int[] num = { 2, 4, 4, 5, 4, 1 };
         try {
             System.out.println("Starting from index 0, adding numbers till index "
-                                + findMiddleIndex(numbers) + " and");
+                    + findMiddleIndex(num) + " and");
             System.out.println("adding rest of the numbers can be equal");
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-        int[] numbers1 = {2,3,1,4,4,1,3,2};
-        try {
-            System.out.println("Starting from index 0, adding numbers till index "
-                                +findMiddleIndex(numbers1) + " and");
-        } catch (Exception e){
-            System.out.println(e.getMessage());
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
     }
 }

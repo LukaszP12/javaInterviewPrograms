@@ -1,4 +1,4 @@
-// Program converts decimal number to binary format using numeric operation
+package Main;// Program converts decimal number to binary format using numeric operation
 
 import java.util.Scanner;
 

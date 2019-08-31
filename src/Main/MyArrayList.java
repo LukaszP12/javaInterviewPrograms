@@ -1,5 +1,5 @@
-import javax.imageio.stream.FileImageInputStream;
-import java.lang.reflect.Array;
+package Main;
+
 import java.util.Arrays;
 
 public class MyArrayList {

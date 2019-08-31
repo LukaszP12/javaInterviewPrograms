@@ -1,3 +1,5 @@
+package Main;
+
 public class MyBinaryCheck {
 
     public boolean isBinaryNumber(int binary){

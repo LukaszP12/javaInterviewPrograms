@@ -1,3 +1,5 @@
+package Main;
+
 public class CommonElementsInArray {
 
     public static void main(String[] args) {

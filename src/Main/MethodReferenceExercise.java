@@ -1,4 +1,4 @@
-// Program, który wywoła funkcję equals na instancji klasy Object używając mechanizmu odwoływania się do metody (przy pomocy ::).
+package Main;// Program, który wywoła funkcję equals na instancji klasy Object używając mechanizmu odwoływania się do metody (przy pomocy ::).
 
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;

@@ -1,3 +1,5 @@
+package Main;
+
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;

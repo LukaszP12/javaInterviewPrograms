@@ -1,7 +1,6 @@
-//Write a program to find out duplicate or repeated characters in a
+package Main;//Write a program to find out duplicate or repeated characters in a
 //string, and calculate the count of repeatation.
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;

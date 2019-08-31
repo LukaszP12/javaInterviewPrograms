@@ -1,4 +1,4 @@
-// A program to find the sum of the first 1000 prime numbers
+package Main;// A program to find the sum of the first 1000 prime numbers
 
 public class Main {
 

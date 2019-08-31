@@ -1,4 +1,4 @@
-// Armstrong numbers are the sum of their own digits to the power of
+package Main;// Armstrong numbers are the sum of their own digits to the power of
 // the number of digits. It is also known as narcissistic numbers.
 
 public class MyArmstrongNumber {

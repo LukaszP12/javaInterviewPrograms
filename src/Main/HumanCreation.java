@@ -1,3 +1,5 @@
+package Main;
+
 import java.util.function.BiFunction;
 
 public class HumanCreation {
