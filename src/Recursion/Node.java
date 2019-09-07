@@ -1,9 +1,10 @@
 package Recursion;
 
 public class Node {
+    public Node right;
+    public Node left;
     int value;
-    Node left;
-    Node right;
+
 
     public Node(int value) {
         this.value = value;

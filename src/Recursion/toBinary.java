@@ -57,17 +57,5 @@ public class toBinary {
         return prod;
     }
 
-    // Height of a binary tree
-    // The number of edges from the root to the deepest leaf.
-    public int calculateTreeHeight(BinaryNode root){
-       if(root != null){
-           if(root.getLeft() != null || root.getRight() != null){
-               return 1 +
-                       max(calculateTreeHeight(root.left),
-                               calculateTreeHeight(root.right));
-           }
-        }
-       return 0;
-    }
 
 }
