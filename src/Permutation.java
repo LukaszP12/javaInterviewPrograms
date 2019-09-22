@@ -39,3 +39,6 @@ public class Permutation {
             return String.valueOf(charArray);
         }
     }
+
+
+    // The time complexity is N! 
