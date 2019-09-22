@@ -2,10 +2,10 @@ package Recursion;
 
 public class fibonacci {
     public static void main(String[] args) {
-
+        System.out.println( fibonacci(15) );
     }
 
-    public int fibonacci(int n){
+    public static int fibonacci(int n){
         if(n <= 1){
             return n;
         }
