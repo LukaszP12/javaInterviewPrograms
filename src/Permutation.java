@@ -10,7 +10,7 @@ public class Permutation {
         }
     /*
     permutation function
-    string to calculate permutatio for @param l starting index @param r end index
+    string to calculate permutation for @param l starting index @param r end index
      */
         private void permute (String str,int l, int r)
         {
