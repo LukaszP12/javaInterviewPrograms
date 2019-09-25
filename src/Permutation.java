@@ -7,6 +7,13 @@ public class Permutation {
             int n = str.length();
             Permutation permutation = new Permutation();
             permutation.permute(str,0, n-1);
+
+            System.out.println("Permutation of my name: Lukasz");
+            String name = "Lukasz";
+            int n1 = name.length();
+            Permutation permutation1 = new Permutation();
+            permutation1.permute(name,0,n1-1);
+
         }
     /*
     permutation function
@@ -41,4 +48,4 @@ public class Permutation {
     }
 
 
-    // The time complexity is N! 
+    // The time complexity is N!
