@@ -43,9 +43,40 @@ public class Permutation_ArrayList {
         return Res;
     }
 
+    // Function to returns the arrayList which contains
+    // all the sub-sequences of str
+    public static ArrayList<String> getSequence(String string){
+        // if string is empty
+        if(string.length() == 0){
+            ArrayList<String> empty = new ArrayList<>();
+            empty.add("");
+            return empty;
+        }
+
+        char ch = string.charAt(0);
+
+        String subStr = string.substring(1);
+
+        // Recurvise call for all the sub-sequences
+        // staring from the second character
+        ArrayList<String> subSequences = getSequence(subStr);
+
+        ArrayList<String> res = new ArrayList<>();
+        for (String val : subSequences){
+            res.add(val);
+            res.add(ch + val);
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         String string = "abc";
         printArrayList(getPermutations(string));
+
+        System.out.println("Now all the sub sequences");
+
+        String string1 = "geek";
+        printArrayList(getSequence(string1));
     }
 
 }

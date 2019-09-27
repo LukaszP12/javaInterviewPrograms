@@ -33,7 +33,9 @@ public class arrayOfStringToStringArray1 {
         // Get String Array
         String[] string = getStringArray(a1);
 
+        //Arrays.toString represents a string representation of the contents of the specified int array
         System.out.println("The converted Array of String is: " + Arrays.toString(string));
+
     }
 
 }
