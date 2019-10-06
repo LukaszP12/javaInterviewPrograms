@@ -12,7 +12,7 @@ public class LinkedListReverseList {
             this.data = data;
             this.next = next;
         }
-        
+
     }
 
     Node reverse(Node node)
