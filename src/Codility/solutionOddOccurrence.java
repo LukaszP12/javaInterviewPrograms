@@ -19,6 +19,7 @@ public class solutionOddOccurrence {
                    if(A[i] == A[j]){
                        A[i] = A[j] = 0;
                        f = true;
+                       break;
                    }
                }
                if(!f)
