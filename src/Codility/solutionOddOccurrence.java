@@ -15,7 +15,7 @@ public class solutionOddOccurrence {
                    continue;
                boolean f = false;
                for (int j=i+1; j<A.length;j++){
-                   if (A[0] == 0) continue;
+                   if (A[j] == 0) continue;
                    if(A[i] == A[j]){
                        A[i] = A[j] = 0;
                        f = true;
