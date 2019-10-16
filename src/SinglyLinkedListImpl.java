@@ -66,6 +66,7 @@ public class SinglyLinkedListImpl<T> {
 
 class Node<T> implements Comparable<T> {
 
+    public int data;
     private T value;
     private Node<T> nextRef;
 
