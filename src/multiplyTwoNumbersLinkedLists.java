@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 public class multiplyTwoNumbersLinkedLists {
 
     static class Node {
@@ -54,6 +56,7 @@ public class multiplyTwoNumbersLinkedLists {
         return num1*num2;
     }
 
+
     public static void main(String[] args) {
         Node first = null;
         Node second = null;
@@ -70,6 +73,7 @@ public class multiplyTwoNumbersLinkedLists {
 
         System.out.println("Result is: ");
         System.out.println(multiplyTwoLists(first,second));
+
 
     }
 
