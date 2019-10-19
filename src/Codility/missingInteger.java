@@ -8,7 +8,7 @@ public class missingInteger {
 
         for (int i : A){
             if(i > 0 && i <= maxSize){
-                counter[i-1] = 1;
+                counter[i-1]++;
             }
         }
 
@@ -25,6 +25,8 @@ public class missingInteger {
 
         System.out.println(solution(a));
 
+        int b[] = {1,2,4,5,7,8,9,10,11,13,14,15};
+        System.out.println(solution(b));
     }
 
 }
