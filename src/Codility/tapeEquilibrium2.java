@@ -8,18 +8,18 @@ public class tapeEquilibrium2 {
         int sumMin = A[0];
         int sumMax = 0;
 
-        for (int i=1; i<A.length;i++){
-            sumMax += A[i];
-        }
+       for (int i=1;i<A.length;i++){
+           sumMax += A[i];
+       }
 
-        int difMin = Math.abs(sumMin - sumMax);
-        for (int i=1; i<A.length; i++){
-            sumMin += A[i];
-            sumMax -= A[i];
-            difMin = Math.min(difMin, Math.abs(sumMin-sumMax));
-        }
+        int dif = Math.abs(sumMax - sumMin);
+        for (int i=1; i<A.length-1;i++){
+           sumMin += A[i];
+           sumMax -= A[i];
+           dif = Math.min(dif,Math.abs(sumMin-sumMax));
+       }
 
-        return difMin;
+        return dif;
     }
 
     public static void main(String[] args) {
