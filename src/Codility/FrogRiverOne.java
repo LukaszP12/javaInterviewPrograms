@@ -1,5 +1,6 @@
 package Codility;
 
+import javax.sound.midi.MidiFileFormat;
 import java.util.HashSet;
 
 public class FrogRiverOne {
@@ -7,14 +8,15 @@ public class FrogRiverOne {
         HashSet<Integer> hashSet = new HashSet<Integer>();
 
         for (int i=0; i<A.length; i++){
-            if (A[i] <= x){
+            if (A[i]<=x){
                 hashSet.add(A[i]);
             }
             if (hashSet.size() == x){
-                return i + 1;
+                return i; 
             }
 
         }
+
 
         return -1;
     }
