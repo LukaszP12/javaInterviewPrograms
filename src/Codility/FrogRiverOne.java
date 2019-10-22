@@ -1,40 +1,19 @@
 package Codility;
 
+import java.util.HashSet;
+
 public class FrogRiverOne {
+    public static int solution(int x, int[] A){
+        HashSet<Integer> hashSet = new HashSet<Integer>();
 
-    public static int solution(int X, int[] A) {
-
-        int max = 0;
-        int lastSecond = 0;
-        int[] alreadyFallen = new int[A.length];
-
-        for (int i=0; i < alreadyFallen.length; i++){
-            alreadyFallen[i] = -1;
-        }
-
-        for (int i = 0; i < A.length; i++) {
-            int position = A[i];
-            alreadyFallen[position - 1] = i;
-
-            if (A[i] > max) {
-                max = A[i];
+        for (int i=0; i<A.length; i++){
+            if (A[i] <= x){
+                hashSet.add(A[i]);
             }
-        }
+            if (hashSet.size() == x){
+                return i + 1;
+            }
 
-            int latestLeaf = 0;
-
-          for (int i = X-1; i < max; i++){
-              if (alreadyFallen[i] >= 0){
-                  if (alreadyFallen[i] > latestLeaf){
-                      latestLeaf = alreadyFallen[i];
-                  }
-              } else {
-                  return -1;
-              }
-          }
-
-        if (max == 0) {
-            return -1;
         }
 
         return -1;
@@ -42,7 +21,7 @@ public class FrogRiverOne {
 
     public static void main(String[] args) {
         int A[] = {1,3,1,4,2,3,5,4};
-        System.out.println(solution(5,A));
+        System.out.println("The frog can cross in the " + solution(5,A) + " min");
     }
 
 }
