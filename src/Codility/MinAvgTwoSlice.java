@@ -4,13 +4,12 @@ import Recursion.sum;
 
 public class MinAvgTwoSlice {
 
-        public int solution ( int[] A){
+        public static int solution ( int[] A){
 
             double minAvg = 100000;
             int index = 0;
 
             if (A.length <= 2) {
-
                 return 0;
             }
 
@@ -38,5 +37,10 @@ public class MinAvgTwoSlice {
 
             return index;
         }
+
+    public static void main(String[] args) {
+        int[] A = {4,2,2,5,1,5,8};
+        System.out.println(solution(A));
+    }
 
 }
