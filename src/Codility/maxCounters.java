@@ -12,7 +12,7 @@ public class maxCounters {
         int level = 0;
         int max = 0;
         boolean previousMax = false;
-        
+
         for (int i : A){
 
             if (i == n + 1){
