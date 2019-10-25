@@ -12,9 +12,7 @@ public class maxCounters {
         int level = 0;
         int max = 0;
         boolean previousMax = false;
-
-        int aboveMax = 0;
-
+        
         for (int i : A){
 
             if (i == n + 1){
@@ -31,6 +29,10 @@ public class maxCounters {
             }
         }
 
+        for (int i=0; i<result.length; i++){
+            result[i] = result[i] + level;
+        }
+
         return result;
     }
 
@@ -38,7 +40,7 @@ public class maxCounters {
         int[] testData = {3,4,4,6,1,4,4};
 
         System.out.println(Arrays.toString(solution(5,testData)));
-        
+
     }
 
 }
