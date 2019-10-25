@@ -1,29 +1,29 @@
 package Codility;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class passingCars {
 
-    public int solution(int[] A){
+    public static int solution(int[] A) {
         int count = 0;
         int multiply = 0;
 
-        for (int car : A){
-            if(car == 0){
-                multiply = multiply + 1;
+        for (int car : A) {
+            if (car == 0) {
+                multiply++;
             }
-            if (multiply > 0){
-                if(car ==  1){
-                    count = count + multiply;
-                    if(count > 1000000000){
-                        return -1;
-                    }
-                }
+            if (car == 1) {
+                count = count + multiply;
             }
         }
-    return count;
+
+        return count;
     }
 
     public static void main(String[] args) {
-
+            int[] A = {0,1,0,1,1};
+            System.out.println(solution(A));
     }
 
 }
