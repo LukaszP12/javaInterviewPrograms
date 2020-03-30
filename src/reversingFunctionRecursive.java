@@ -35,6 +35,34 @@ public class reversingFunctionRecursive {
         return head;
     }
 
+    void printList(Node node)
+    {
+        while (node != null)
+        {
+            System.out.println(node.data + " ");
+            node = node.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        reversingFunctionRecursive list = new reversingFunctionRecursive();
+        list.head = new Node(1);
+        list.head.next = new Node(2);
+        list.head.next.next = new Node(3);
+        list.head.next.next.next = new Node(4);
+        list.head.next.next.next.next = new Node(5);
+        list.head.next.next.next.next.next = new Node(6);
+        list.head.next.next.next.next.next.next = new Node(7);
+        list.head.next.next.next.next.next.next.next = new Node(8);
+
+        System.out.println("Original linked list: ");
+        list.printList(head);
+        Node res = list.reverseUtil(head, null);
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Reversed linked list ");
+        list.printList(res);
+    }
 
 }
 
