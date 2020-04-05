@@ -46,6 +46,7 @@ public class GFG_printReverseLinkedListUsingStack {
             ptr = ptr.next;
         }
 
+
         while (stack.size() > 0){
             System.out.println(stack.peek().data + " ");
             stack.pop();
