@@ -2,6 +2,7 @@ package Codility;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.function.BinaryOperator;
 
 public class passingCars {
 
@@ -24,6 +25,10 @@ public class passingCars {
     public static void main(String[] args) {
             int[] A = {0,1,0,1,1};
             System.out.println(solution(A));
+
+
+
+
     }
 
 }
