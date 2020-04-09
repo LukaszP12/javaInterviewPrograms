@@ -26,6 +26,19 @@ public class identicalListedList {
         return (a == null && b == null);
     }
 
+    static boolean areIdenticalRecur(Node a, Node b)
+    {
+        if (a == null && b == null){
+            return true;
+        }
+
+        if (a != null && b != null){
+            return (a.n == b.n) && areIdenticalRecur(a.next,b.next);
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         Node head1 = new Node(1);
         head1.next = new Node(2);
@@ -44,6 +57,13 @@ public class identicalListedList {
         }else {
             System.out.println("They are not identical");
         }
+
+        if (areIdenticalRecur(head1,head2) == true){
+            System.out.println("With recursion the lists are identical");
+        }else {
+            System.out.println("The lists are not identical with recursion");
+        }
+
     }
 
 }
