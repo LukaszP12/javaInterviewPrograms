@@ -1,4 +1,4 @@
-public class MyDisticntElements {
+public class MyDistinctElements {
 
     public static void printDistinctElement(int[] arr){
 

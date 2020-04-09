@@ -1,7 +1,7 @@
 
 public class rotateALinkedList {
 
-     Node head;
+    Node head;
 
     class Node{
         int data;

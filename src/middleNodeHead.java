@@ -1,38 +1,42 @@
 public class middleNodeHead {
 
-    static Node head;
+    Node head;
 
-    static class Node {
+    class Node {
         int data;
         Node next;
-
         public Node(int data) {
             this.data = data;
             this.next = null;
         }
     }
 
-     static void makeMiddleNodeHead(Node head){
+      static void makeMiddleNodeHead(Node head){
 
          if (head == null)
              return;
 
            Node slowPointer = head;
            Node fasterPointer = head;
-           Node prev = null;
+           Node prev = head;
 
            while (fasterPointer != null && fasterPointer.next != null){
                prev = slowPointer;
-               fasterPointer = fasterPointer.next.next;
                slowPointer = slowPointer.next;
+               fasterPointer = fasterPointer.next.next;
            }
            prev.next = prev.next.next;
 
            slowPointer.next = head;
-           head = slowPointer;
      }
 
-    static void display(Node head){
+    void push(int data){
+        Node new_node = new Node(data);
+        new_node.next = head;
+        head = new_node;
+     }
+
+     static void display(Node head){
         Node temp = head;
         while (temp.next != null){
             temp = temp.next;
@@ -42,19 +46,19 @@ public class middleNodeHead {
     }
 
     public static void main(String[] args) {
-        head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
-        head.next.next.next.next = new Node(5);
-        head.next.next.next.next.next = new Node(6);
-        head.next.next.next.next.next.next = new Node(7);
-        head.next.next.next.next.next.next.next = new Node(8);
-        head.next.next.next.next.next.next.next.next = new Node(9);
-        head.next.next.next.next.next.next.next.next.next = new Node(10);
+        middleNodeHead list = new middleNodeHead();
 
-        makeMiddleNodeHead(head);
-        display(head);
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(4);
+        list.push(5);
+        list.push(6);
+        list.push(7);
+        list.push(8);
+
+        makeMiddleNodeHead(list.head);
+        display(list.head);
 
     }
 
