@@ -6,22 +6,17 @@ public class recurDeleteKthNode {
     };
 
     // deletes k-th node and returns new head
-
-    static Node deleteNode(Node start, int k)
+    static Node deleteKthNode(Node start, int k)
     {
-        if (k < 1)
+        if (k<1)
             return start;
 
-        if (start == null)
-            return null;
-
-        if (k == 1)
-        {
+        if (k == 1){
             Node res = start.next;
             return res;
         }
 
-        start.next = deleteNode(start.next,k-1);
+        start.next = deleteKthNode(start.next, k-1);
         return start;
     }
 
@@ -57,9 +52,10 @@ public class recurDeleteKthNode {
         head = push(head,12);
 
         int k = 3;
-        head = deleteNode(head,k);
+        head = deleteKthNode(head,k);
 
         printList(head);
     }
 
 }
+

@@ -26,9 +26,6 @@ public class passingCars {
             int[] A = {0,1,0,1,1};
             System.out.println(solution(A));
 
-
-
-
     }
 
 }
