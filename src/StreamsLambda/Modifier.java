@@ -2,6 +2,6 @@ package StreamsLambda;
 
 public interface Modifier {
 
-    String modify(String s);
+    String modify(String input);
 
 }
