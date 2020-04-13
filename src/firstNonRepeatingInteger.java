@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class firstNonRepeatingInteger {
 
@@ -33,6 +34,13 @@ public class firstNonRepeatingInteger {
         }
 
         System.out.println(hashMap.entrySet());
+
+            for (Map.Entry<Integer, Integer> x : hashMap.entrySet()){
+                if (x.getValue() == 1)
+                    System.out.println(x.getKey());
+            }
+
+
     }
 
     public static int firstNonRepeating(int[] arr, int n) {
