@@ -9,6 +9,12 @@ public class Main {
         Walking walking = new Walking(true, "Nike", 44);
         System.out.println(walking);
         walking.display();
+
+        NikeRunner nikeRunner = new NikeRunner(true, "Nike", 43, true);
+        nikeRunner.display();
+
+        Walking walking1 = new NikeRunner(false, "Nike Air Max", 45, true);
+        walking1.display();
     }
 
 }
