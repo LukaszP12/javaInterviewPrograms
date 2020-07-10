@@ -21,7 +21,7 @@ public class QueueDemo {
         if (isQueueFull()){
             throw new RuntimeException("Queue is Full!!");
         }
-
+            
         if (rear == maxSize-1){
             rear = -1;
         }
