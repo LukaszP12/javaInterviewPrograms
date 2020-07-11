@@ -8,6 +8,7 @@ public class CustomArrayListRunner<myCustomArray> {
         myCustomArray.add("Test Value 1");
         myCustomArray.add("Custom Value 2");
         myCustomArray.add("3rd val");
+        myCustomArray.add("the 4th value");
 
         for(String str : myCustomArray){
             System.out.println(str);

@@ -37,7 +37,7 @@ public class CustomArrayList<T> implements Iterable<T> {
         @Override
         public E next() {
             E val = internalList.get(indexPosition);
-            indexPosition++;
+            indexPosition += 2;
             return val;
         }
     }
